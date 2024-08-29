@@ -1,0 +1,113 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.navbar{
+    /* max-height:15  ; */
+    height: 7vh;
+    /* background-color: antiquewhite; */
+    display: flex;
+   
+}
+.logo
+{
+    height: 80%;
+    padding: 1rem;
+    padding-top: 0.7rem;
+    margin-right: 62%;
+    
+}
+#logo_img{
+    width: 95px;
+    border-radius: 0.5rem;
+    
+}
+/* .nav_collection{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+  
+    margin-left: auto;
+    margin-right: 50px;
+}
+.nav_item{
+    text-decoration: none;
+    color: black;   
+    padding: 1rem;
+    /* padding-top: 0.7rem; */
+    text-align: center;
+} */
+#profile{
+  
+    /* align-items: center; */
+    
+    /* color: white;
+    font-size: 1.2rem;
+    cursor: pointer; */
+}
+#prof{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    padding: 1px;
+    position: fixed;
+    right: 2.5vh;
+    top: 1.5vh;
+    border-radius: 50%;
+    background-color: rgb(93, 90, 90);
+    /* cursor: pointer; */
+    /* margin-right: 10px; */
+}
+/* li:hover{
+    transform: scale(1.05)translateZ(0);
+    
+}
+li{
+    transition: transform 0.3s ;
+    transform: translateZ(0);
+    cursor: pointer;
+  
+} */
+.nav_collection {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin-left: auto;
+    margin-right: 50px;
+}
+
+.nav_item {
+    text-decoration: none;
+    color: black;   
+    padding: 1rem;
+    text-align: center;
+    transition: color 0.3s, transform 0.3s;
+}
+
+li {
+    transition: transform 0.3s, color 0.3s;
+    cursor: pointer;
+    backface-visibility: hidden; /* Helps with blur issues */
+    transform-origin: center; /* Ensures scaling is centered */
+}
+
+li:hover {
+    transform: scale(1.05);
+    color: #333; /* Optional: Change color on hover for better visibility */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

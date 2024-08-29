@@ -1,0 +1,156 @@
+/* Reset padding and margin for all elements */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Ensure padding and border are included in element's total width and height */
+}
+
+/* Navbar container */
+.navbar {
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Adjusts space between logo and nav items */
+    padding: 0 1rem; /* Add padding for better spacing */
+    background-color: #f8f9fa; /* Light background color for better contrast */
+}
+
+/* Logo container */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+#logo_img {
+    width: 95px;
+    border-radius: 0.5rem;
+}
+
+/* Navigation collection */
+.nav_collection {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin-left: auto; /* Pushes nav items to the right */
+    margin-right: 1.5rem; /* Add some right margin for spacing */
+}
+
+.nav_item {
+    text-decoration: none;
+    color: black;
+    padding: 1rem;
+    text-align: center;
+    transition: color 0.3s, transform 0.3s;
+}
+
+/* Profile section */
+#prof {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    padding: 1px;
+    position: absolute; 
+    right: 10px;/* Adjust position relative to the navbar */
+    top: 10px;
+    border-radius: 50%;
+    background-color: rgb(93, 90, 90);
+}
+
+#profile {
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+#menu{
+    display: none;
+    /* position: absolute;
+    background-color:#f9f9f9;
+    padding: 10px;
+    top: 60px;
+    left: 0; */
+    /* margin-left: 200 px; */
+}
+#sidebar{
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 7vh;
+    height: 100vh;
+    width: 20vh;
+    background-color: aqua;
+}
+
+
+
+@media (max-width: 570px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start; 
+    }
+
+    .logo {
+        margin-right: 0;
+    margin-top:0.55rem;}
+
+    .nav_collection {
+        display: none;
+        width: 100%;
+        margin-right: 0; 
+    }
+
+    /* .nav_item {
+        display: block;
+        padding: 0.5rem;
+        text-align: left; 
+    } */
+/* 
+    #prof {
+        position: static; 
+        margin-top: 1rem; 
+    } */
+    #menu{
+        display:block;
+        position: fixed;
+        size: 70px;
+        background-color: #f9f9f9;
+        padding: 10px;
+        padding-top: 0;
+        top: 60px;
+        left: 0;
+        /* margin-left: 200 px; */
+    }
+   
+   
+    
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 0.5rem;
+    }
+    #logo_img {
+        width: 75px; 
+    }
+
+    .nav_item {
+        padding: 0.75rem; 
+    }
+    
+}
+
+
+li {
+    transition: transform 0.3s, color 0.3s;
+    cursor: pointer;
+    backface-visibility: hidden; 
+    transform-origin: center;
+}
+
+li:hover {
+    transform: scale(1.05);
+    color: #333; 
+}
+
+
